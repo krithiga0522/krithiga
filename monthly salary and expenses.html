@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="grey">
+<body>
+    <div>
+            <h1><marquee>Monthly savings and expenses </marquee></h1>
+        </div>
+        Enter monthly_salary : <br>
+            <input type="text" id="Text1">
+            <br>
+            Enter home_rent : <br>
+            <input type="text" id="Text2">
+            <br>
+            Enter eb_bill : <br>
+            <input type="text" id="Text3">
+            <br>
+            Enter home_grossary : <br>
+            <input type="text" id="Text4">
+            <br>
+            Enter furniture_item : <br>
+            <input type="text" id="Text5">
+            <br>
+            Enter cooking_item : <br>
+            <input type="text" id="Text6">
+            <br>
+           Enter other_expenses : <br>
+            <input type="text" id="Text7">
+            <br>
+      total : <br>
+            <input type="text" id="txttotal">
+            <br>
+ <input type="button"  value="Display total" onclick="add_number()">
+<script>
+ function add_number() {
+var monthly_salary = parseInt(document.getElementById("Text1").value);
+var home_rent = parseInt(document.getElementById("Text2").value);
+var eb_bill = parseInt(document.getElementById("Text3").value);
+ var home_grossary = parseInt(document.getElementById("Text4").value);
+var furniture_items = parseInt(document.getElementById("Text5").value);
+ var cooking_items = parseInt(document.getElementById("Text6").value);
+ var other_expenses= parseInt(document.getElementById("Text6").value);
+ var total = monthly_salary-(home_rent+ eb_bill+home_grossary+furniture_items+cooking_items+other_expenses)
+document.getElementById("txttotal").value = total;
+        }
+</script>
+</body>
+</html>
